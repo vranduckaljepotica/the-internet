@@ -1,15 +1,43 @@
-const locators = require('../../support/locators');
-
-describe('Checkboxes test', () => {
-    beforeEach(() => {
-        cy.visit('checkboxes');
-    });
-    it('should load checkboxes page correctly', () => {
-        cy.get(locators.checkboxes.checkboxTitile).should('be.visible').and('contain', 'Checkboxes');
-        cy.get(locators.checkboxes.checkbox1).should('be.visible');
-        cy.get(locators.checkboxes.checkbox2).should('be.visible');
-    });
-    it('should check and uncheck checboxes', () => {
+const locators = require('../../support/locators'); //access locators file
+/* This is test suite for checkboxes page on the-internet heroku app */
+describe('TS_02 Checkboxes test', () => {
+    beforeEach(() => { //before each function executes before each test (it block)
+        cy.visit('checkboxes'); //in this case it will redirct us to checkboxes page
         
-    })
+        // defining aliases for checkboxe elements
+        cy.get(locators.checkboxes.checkbox1).as('checkbox1');
+        cy.get(locators.checkboxes.checkbox2).as('checkbox2');
+    });
+    // first test case in this suite, verification that page loads correct elements
+    it('TC_01/2 should load checkboxes page correctly', () => {
+        cy.get(locators.checkboxes.checkboxTitile).should('be.visible').and('contain', 'Checkboxes');
+        cy.get('@checkbox1').should('be.visible');
+        cy.get('@checkbox2').should('be.visible');
+        cy.get('@checkbox1').should('not.be.checked');
+        cy.get('@checkbox2').should('be.checked');
+        console.log("All elements are visible and have correct default settings.");
+    });
+    it('TC_02/2 check checkbox 1', () => {
+        cy.get('@checkbox1').check();
+        cy.get('@checkbox1').should('be.checked');
+        cy.get('@checkbox2').should('be.checked');
+        console.log("Both checkboxes are checked.");
+    });
+    it('TC_03/2 uncheck checkbox 2', () => {
+        cy.get('@checkbox2').uncheck();
+        cy.get('@checkbox1').should('not.be.checked');
+        cy.get('@checkbox2').should('not.be.checked');
+        console.log("Both checkboxes are unchecked.");
+    });
+    it('TC_04/2 toggle checkboxes', () => {
+        cy.get('@checkbox1').check();
+        cy.get('@checkbox2').uncheck();
+        cy.get('@checkbox1').should('be.checked');
+        cy.get('@checkbox2').should('not.be.checked');
+        cy.get('@checkbox1').uncheck();
+        cy.get('@checkbox2').check();
+        cy.get('@checkbox1').should('not.be.checked');
+        cy.get('@checkbox2').should('be.checked');
+        console.log("Checkboxes toggled successfully.");
+    });
 })
