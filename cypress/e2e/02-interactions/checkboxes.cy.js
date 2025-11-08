@@ -17,18 +17,21 @@ describe('TS_02 Checkboxes test', () => {
         cy.get('@checkbox2').should('be.checked');
         console.log("All elements are visible and have correct default settings.");
     });
+    // second test case in this suite, check checkbox 1
     it('TC_02/2 check checkbox 1', () => {
         cy.get('@checkbox1').check();
         cy.get('@checkbox1').should('be.checked');
         cy.get('@checkbox2').should('be.checked');
         console.log("Both checkboxes are checked.");
     });
+    // third test case in this suite, uncheck checkbox 2
     it('TC_03/2 uncheck checkbox 2', () => {
         cy.get('@checkbox2').uncheck();
         cy.get('@checkbox1').should('not.be.checked');
         cy.get('@checkbox2').should('not.be.checked');
         console.log("Both checkboxes are unchecked.");
     });
+    // fourth test case in this suite, toggle both checkboxes
     it('TC_04/2 toggle checkboxes', () => {
         cy.get('@checkbox1').check();
         cy.get('@checkbox2').uncheck();
