@@ -27,5 +27,12 @@ module.exports = {
         figureCaption: '.figcaption',
         profileLink: '.figcaption a',
         profileName: '.figcaption h5'
+    },
+    drag_and_drop: {
+        dragAndDropTitle: 'h3',
+        columnA: '#column-a',
+        columnB: '#column-b',
+        headerA: '#column-a header',
+        headerB: '#column-b header'
     }
 };
