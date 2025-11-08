@@ -42,5 +42,10 @@ module.exports = {
         startButton: '#start button',
         loadingIndicator: '#loading',
         loadedText: '#finish h4'
+    },
+    dynamic_content: {
+        dynamicContentTitle: 'h3',
+        contentImages: '.large-10.columns .row .large-2.columns img',
+        contentParagraphs: '.large-10.columns .row .large-10.columns'
     }
 };
