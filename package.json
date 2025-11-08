@@ -15,6 +15,7 @@
   "description": "",
   "devDependencies": {
     "cypress": "^15.6.0",
+    "cypress-drag-drop": "^1.1.1",
     "cypress-real-events": "^1.15.0",
     "typescript": "^5.9.3"
   }
