@@ -10,8 +10,15 @@ module.exports = {
         logout: 'a.button.secondary.radius'
     },
     checkboxes: {
-        checkbox1: 'input[type="checkbox"]'.eq(0),
-        checkbox2: 'input[type="checkbox"]'.eq(1),
+        group: '#checkboxes input[type="checkbox"]',
+        checkbox1: 'checboxes input[type="checkbox"]:nth-of-type(1)',
+        checkbox2: 'checboxes input[type="checkbox"]:nth-of-type(2)',
         checkboxTitile: 'h3'
+    },
+    dropdown: {
+        dropdownTitle: 'h3',
+        dropdownMenu: '#dropdown',
+        option1: 'option[value="1"]',
+        option2: 'option[value="2"]'
     }
 };
