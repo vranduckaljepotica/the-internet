@@ -34,5 +34,13 @@ module.exports = {
         columnB: '#column-b',
         headerA: '#column-a header',
         headerB: '#column-b header'
+    },
+    dynamic_loading: {
+        dynamicLoadingTitle: 'h3',
+        example1Link: 'a[href="/dynamic_loading/1"]',
+        example2Link: 'a[href="/dynamic_loading/2"]',
+        startButton: '#start button',
+        loadingIndicator: '#loading',
+        loadedText: '#finish h4'
     }
 };
