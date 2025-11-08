@@ -20,5 +20,12 @@ module.exports = {
         dropdownMenu: '#dropdown',
         option1: 'option[value="1"]',
         option2: 'option[value="2"]'
+    },
+    hovers: {
+        hoversTitle: 'h3',
+        figure: '.figure',
+        figureCaption: '.figcaption',
+        profileLink: '.figcaption a',
+        profileName: '.figcaption h5'
     }
 };

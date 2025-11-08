@@ -1,9 +1,9 @@
 const locators = require('../../support/locators'); //access locators file
 
-/* This is test suite for dropdown page on the-internet heroku app 
-   owner: Amna Sinanovic-Dukmenic
-   framework: Cypress
-   date: November 2025
+/**  This is test suite for dropdown page on the-internet heroku app 
+ * owner: Amna Sinanovic-Dukmenic
+ * framework: Cypress
+ * date: November 2025
 */
 
 describe('TS_03 Dropdown test', () => {
