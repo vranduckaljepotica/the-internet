@@ -1,5 +1,9 @@
 const locators = require('../../support/locators'); //access locators file
-/* This is test suite for login page on the-internet heroku app */
+/**  This is test suite for login page on the-internet heroku app
+ *  owner: Amna Sinanovic-Dukmenic
+ *  framework: Cypress
+ *  date: November 2025
+ */
 describe('TS_01 Login Test', () => {
     beforeEach(() => { //before each function executes before each test (it block)
         cy.visit('/login'); //in this case it will redirct us to login page
