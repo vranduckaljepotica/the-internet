@@ -47,5 +47,16 @@ module.exports = {
         dynamicContentTitle: 'h3',
         contentImages: '.large-10.columns .row .large-2.columns img',
         contentParagraphs: '.large-10.columns .row .large-10.columns'
+    },
+    dynamic_conrols: {
+        dynamicControlsTitle: 'h4',
+        chexbox: '#checkbox-example input[type="checkbox"]',
+        removeAddButton: '#checkbox-example button',
+        checkboxMessage: '#checkbox-example #message',
+        inputField: '#input-example input[type="text"]',
+        enableDisableButton: '#input-example button',
+        inputMessage: '#input-example #message',
+        loadingIndicatorCheckbox: '#checkbox-example #loading',
+        loadingIndicatorInput: '#input-example #loading'
     }
 };
