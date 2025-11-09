@@ -48,7 +48,7 @@ module.exports = {
         contentImages: '.large-10.columns .row .large-2.columns img',
         contentParagraphs: '.large-10.columns .row .large-10.columns'
     },
-    dynamic_conrols: {
+    dynamic_controls: {
         dynamicControlsTitle: 'h4',
         chexbox: '#checkbox-example input[type="checkbox"]',
         removeAddButton: '#checkbox-example button',
@@ -58,5 +58,16 @@ module.exports = {
         inputMessage: '#input-example #message',
         loadingIndicatorCheckbox: '#checkbox-example #loading',
         loadingIndicatorInput: '#input-example #loading'
+    },
+    dissapearing_elements: {
+        dissapearingElementsTitle: 'h3',
+        navBarItems: '.example ul li',
+        gallery: 'a[href="/gallery"]',
+        galleryTitle: 'h2',
+        homeLink: 'a[href="/"]',
+        aboutLink: 'a[href="/about/"]',
+        contactUsLink: 'a[href="/contact_us"]',
+        portfolioLink: 'a[href="/portfolio"]',
+        galleryLink: 'a[href="/gallery"]'
     }
 };
