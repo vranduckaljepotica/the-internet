@@ -19,7 +19,13 @@ describe('TS_09 Dissapearing Elements tests', () => {
 
     // second test case in this suite, verify that "Gallery" link appears after multiple reloads
     it('TC_02/9 should find Gallery link after multiple reloads', () => {
- 
+        const maxAttempts = 10;
+        const navBarLenght = locators.dissapearing_elements.navBarLenght;
+        function checkForGallery(attempt = 1) {
+            cy.get(locators.dissapearing_elements.navBarItems).then(($links) => {
+                
+            });
+        }
     });
 
     // third test case in this suite, verify navigation to Gallery page if link is present
